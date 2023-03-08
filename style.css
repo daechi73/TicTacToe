@@ -1,0 +1,87 @@
+body,
+html {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  height: 100%;
+  width: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.divCell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-main {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+body.blur {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  margin-top: 60px;
+}
+.playerStats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 300px;
+}
+#gameboard {
+  display: flex;
+  justify-content: center;
+}
+
+.winner {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.endMenu {
+  /* display: none; */
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  position: absolute;
+  top: 20%;
+  left: 42%;
+  z-index: 0;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  border: solid;
+  background: white;
+  color: black;
+}
+.buttonContainer > button {
+  border: solid;
+  border-radius: 4px;
+}
+
+.gameOver {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+
+.notShow {
+  display: none;
+}
